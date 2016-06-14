@@ -15,7 +15,8 @@
     "multer": "^1.1.0",
     "nodemon": "^1.9.2",
     "passport": "^0.3.2",
-    "passport-google": "^0.3.0"
+    "passport-google": "^0.3.0",
+    "passport-google-oauth": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
