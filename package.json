@@ -10,7 +10,7 @@
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "jade": "^1.11.0",
-    "mongoose": "^4.4.7",
+    "mongoose": "^4.4.20",
     "morgan": "^1.7.0",
     "multer": "^1.1.0",
     "nodemon": "^1.9.2",

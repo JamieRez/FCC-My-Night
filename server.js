@@ -16,13 +16,13 @@ mongoose.connect(configDB.url, function(){
     console.log('database connected');
 });
 
-//require('./config/passport.js')(passport);
+require('./config/passport.js')(passport);
 
 app.use(bodyParser());
 app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser());
 
-app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
+app.use(session({ secret: 'mySpecialSecret' })); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 

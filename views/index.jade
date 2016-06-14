@@ -9,5 +9,8 @@ html
     link(rel='stylesheet' type = 'text/css' href='/css/main.css')
 
   body
-    a#googleBtn.pull-right(href = '#') Login with Google
+    if(!user)
+      a#googleBtn.pull-right(href='/auth/google/get') Login with Google
+    if(user)
+      p#googleBtn.pull-right="Logged in as " + user.name
     h1#Logo My Night
