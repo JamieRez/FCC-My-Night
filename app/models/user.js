@@ -6,5 +6,13 @@ var userSchema = mongoose.Schema ({
   email : String
 });
 
+var User = mongoose.model('User' , userSchema);
 
-module.exports = mongoose.model('User' , userSchema);
+var deleter = function(){
+  User.remove({} , function(err){
+    if(err) throw err;
+  });
+}
+
+
+module.exports = {User , deleter};

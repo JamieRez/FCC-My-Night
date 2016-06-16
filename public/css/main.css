@@ -16,19 +16,144 @@ body{
   font-family : Aspire;
   color : #ead8f3;
   font-size : 550%;
-  text-align: center;
   display : block;
+  position : absolute;
+  left : 43%;
+  top : 0%;
 }
 
-#googleBtn{
+.homeBtn{
   font-family : Aspire;
   text-decoration: none;
   font-size : 200%;
-  display : inline;
+  display : inline-block;
   color : #ead8f3;
+  margin-left : 90%;
+}
+
+#profile{
+  font-family : Aspire;
+  text-decoration: none;
+  font-size : 200%;
+  display : inline-block;
+  color : #ead8f3;
+  margin-left : 85%;
+}
+
+#logOut{
+  margin-left : 45%;
+  text-decoration: none;
+  color : #ead8f3;
+  display : none;
+}
+
+#logOut:hover{
+  color : #d1bfda
+}
+
+#homeBtn:hover {
+  color : #D1BFDA;
+}
+
+.dineListGroup {
+  color : #ead8f3;
+  float : left;
+  margin-top : 50px;
+  margin-left : 20px;
+}
+
+.dineObj {
+  border-top : 1px solid #382641;
+  border-bottom : 1px solid #382641;
+  width : 800px;
+  height : 215px;
+  display : block;
+}
+
+#dineOrig {
+  border-top : 1px solid #382641;
+  border-bottom : 1px solid #382641;
+  width : 800px;
+  height : 215px;
+  display : none;
+}
+
+.goingBtn{
+  color : #ead8f3;
+  position : relative;
+  font-family : Aspire;
+  text-decoration: none;
+  font-size : 30px;
+  float : left;
+  left : 400px;
+  top : 60px;
+  pointer-events: all;
+}
+
+.goingBtn:hover{
+  color : #d1bfda;
+  text-decoration: none;
+}
+
+.goingBtnAuth{
+  color : #ead8f3;
+  position : relative;
+  font-family : Aspire;
+  text-decoration: none;
+  font-size : 30px;
+  float : left;
+  left : 400px;
+  top : 60px;
+  pointer-events: all;
+}
+
+.goingbtnAuth:hover{
+  color : #d1bfda;
+  text-decoration: none;
+}
+
+.dineName {
+  float :left;
+  margin-top : 5px
+}
+
+.dineQuote{
+  margin-top : 50px;
+}
+
+.dineImg{
+  float : left;
+  margin-top : 5px;
   margin-right : 10px;
 }
 
-#googleBtn:hover {
-  color : #D1BFDA;
+#searchBar{
+  margin-top : 100px;
+  width : 60%;
+  margin-left : auto;
+  margin-right : auto;
+}
+
+a:hover{
+  text-decoration: none;
+  color : #d1bfda;
+}
+
+.leave{
+  margin-left : 20px;
+  display : none;
+  color : #ead8f3;
+  position : relative;
+  font-family : Aspire;
+  text-decoration: none;
+  font-size : 30px;
+  float : left;
+  left : 400px;
+  top : 60px;
+  pointer-events: all;
+}
+
+.leave:hover{
+  color : #d1bfda;
+  text-decoration: none;
 }

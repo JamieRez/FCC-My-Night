@@ -3,14 +3,32 @@ html
 
   head
     title My Night!
+    meta(name='viewport', content='width=device-width, height = device-height , initial-scale==1')
     script(src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
     link(rel="stylesheet" href="/css/bootstrap.min.css")
     script(src="/css/bootstrap.min.js")
     link(rel='stylesheet' type = 'text/css' href='/css/main.css')
+    script(src="/css/main.js")
 
   body
     if(!user)
-      a#googleBtn.pull-right(href='/auth/google/get') Login with Google
+      a.homeBtn(href='/auth/google') Login with Google
     if(user)
-      p#googleBtn.pull-right="Logged in as " + user.name
+        #profile
+          p="Logged in as " + user.name
+          a#logOut(href='/logout') Log Out
     h1#Logo My Night
+    
+    form#searchForm(onsubmit='return false')
+      input#searchBar.form-control(type='search' placeholder = 'Enter your location' value=searchTerm)
+    
+    .dineListGroup
+      #dineOrig
+        img.dineImg(src='https://s3-media4.fl.yelpcdn.com/bphoto/OWgk14IbaRw5FjkGTPpTdg/ls.jpg' height=200 width=200)
+        h2.dineName Steakhouse Bar & Grill
+        h5.dineQuote "I had a steak there and I enjoyed it"
+        if(!user)
+          a(role='button').goingBtnAuth.going 0 Coming
+        if(user)
+          a(role='button').goingBtn.going 0 Coming
+          a(role='button').leave Nevermind

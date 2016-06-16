@@ -1,5 +1,5 @@
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-var User = require('../app/models/user.js');
+var User = require('../app/models/user.js').User;
 var configAuth = require('./auth.js');
 
 module.exports = function(passport) {
@@ -32,6 +32,7 @@ module.exports = function(passport) {
 
       });
     }
+
   ));
 
     // used to serialize the user for the session
